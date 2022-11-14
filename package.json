@@ -1,0 +1,29 @@
+{
+  "name": "dry-lab",
+  "version": "1.0.0",
+  "description": "A document for dry lab in iGEM",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/497363983/dry-lab.git"
+  },
+  "keywords": [
+    "dry_lab"
+  ],
+  "author": "Weiwei Qian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/497363983/dry-lab/issues"
+  },
+  "homepage": "https://github.com/497363983/dry-lab#readme",
+  "dependencies": {
+    "markdown-it-texmath": "^1.0.0",
+    "vitepress": "^1.0.0-alpha.28",
+    "vue": "^3.2.45"
+  }
+}
