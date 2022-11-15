@@ -45,7 +45,11 @@ export default withMermaid(
                     icon: 'github',
                     link: 'https://github.com/497363983/iGEM-ToolBox'
                 }
-            ]
+            ],
+            editLink: {
+                pattern: "https://github.com/497363983/dry-lab/edit/main/docs/:path",
+                text: "Edit this page on GitHub"
+            }
         },
         markdown: {
             config: (md) => {
