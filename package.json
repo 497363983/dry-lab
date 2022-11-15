@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/497363983/dry-lab#readme",
   "dependencies": {
-    "markdown-it-texmath": "^1.0.0",
-    "vitepress": "^1.0.0-alpha.28",
+    "katex": "^0.16.3",
+    "markdown-it-texmath": "^1.0.0"
+  },
+  "devDependencies": {
+    "mermaid": "9.1.7",
     "vitepress-plugin-mermaid": "^2.0.8",
+    "vitepress": "^1.0.0-alpha.28",
     "vue": "^3.2.45"
   }
 }

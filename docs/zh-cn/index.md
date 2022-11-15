@@ -11,7 +11,7 @@ hero:
     actions:
         - theme: brand
           text: Get started
-          link: /document/introduction/What-is-dry-lab
+          link: /zh-cn/document/introduction/
         - theme: alt
           text: View on GitHub
           link: https://github.com/497363983/dry-lab
