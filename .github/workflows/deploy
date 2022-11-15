@@ -27,13 +27,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: npm
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run docs:build
-      - name: Deploy GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          BRANCH: main
-          FOLDER: docs/.vitepress/dist
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: docs/.vitepress/dist
