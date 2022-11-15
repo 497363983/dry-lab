@@ -55,4 +55,5 @@ export default withMermaid(
                 })
             }
         },
+        base: '/dry-lab/'
     })
