@@ -12,6 +12,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+          pages: write      # to deploy to Pages
+          id-token: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -29,9 +32,6 @@ jobs:
         run: npm run docs:build
 
       - name: Deploy
-        permissions:
-          pages: write      # to deploy to Pages
-          id-token: write
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
