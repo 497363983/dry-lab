@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { getContributors } from '../scripts/changelog'
+import { getContributorsAt } from '../scripts/changelog'
 import { SearchPlugin } from 'vitepress-plugin-search'
 
 
