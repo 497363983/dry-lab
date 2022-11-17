@@ -2,7 +2,7 @@ const ID = '/virtual-contributors'
 
 export function Contributors(data) {
   return {
-    name: 'vueuse-contributors',
+    name: 'contributors',
     resolveId(id) {
       return id === ID ? ID : null
     },

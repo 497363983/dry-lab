@@ -15,23 +15,26 @@
   "keywords": [
     "dry_lab"
   ],
-  "author": "Weiwei Qian",
+  "author": "Weiwei Qian<497363953@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/497363983/dry-lab/issues"
   },
   "homepage": "https://github.com/497363983/dry-lab#readme",
-  "dependencies": {},
   "devDependencies": {
+    "fast-glob": "^3.2.12",
+    "flexsearch": "^0.7.31",
+    "fs-extra": "^10.1.0",
     "katex": "^0.16.3",
+    "markdown-it": "^13.0.1",
     "markdown-it-texmath": "^1.0.0",
     "md5": "^2.3.0",
     "mermaid": "9.1.7",
     "simple-git": "^3.15.0",
     "vite": "^3.2.3",
-    "vitepress": "^1.0.0-alpha.28",
+    "vitepress": "^1.0.0-alpha.29",
     "vitepress-plugin-mermaid": "^2.0.8",
-    "vue": "^3.2.45",
-    "fs-extra": "^10.1.0"
+    "vitepress-plugin-search": "^1.0.4-alpha.15",
+    "vue": "^3.2.45"
   }
 }
