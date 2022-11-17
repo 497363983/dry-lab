@@ -3,7 +3,7 @@ layout: home
 
 hero:
     name: Dry Lab
-    text: A document for dry lab in iGEM
+    text: iGEM干实验文档
     # tagline: Lorem
     # image:
     #     src: /igem_toolbox.svg

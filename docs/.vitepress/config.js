@@ -1,63 +1,58 @@
+// import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
-
-
-export default withMermaid(
-    /**
-     * @type {import('vitepress').UserConfig}
-     */
-    {
-        title: "Dry Lab",
-        description: "A document for dry lab in iGEM",
-        lastUpdated: true,
-        themeConfig: {
-            nav: [
-                {
-                    text: "Document",
-                    link: "/document/introduction/What-is-dry-lab"
-                }
-            ],
-            sidebar: {
-                '/zh-cn/document/': [
+import { getSideBarItems } from "./config/sidebar";
+export default withMermaid({
+    title: "Dry Lab",
+    description: "A knowledge base for dry lab in iGEM",
+    lastUpdated: true,
+    cleanUrls: 'without-subfolders',
+    themeConfig: {
+        nav: [
+            {
+                text: "Document",
+                items: [
                     {
-                        text: '介绍',
-                        items: [
-                            {
-                                text: "什么是Dry lab",
-                                link: "/zh-cn/document/introduction/"
-                            }
-                        ]
-                    }
-                ],
-                '/document/': [
+                        text: "About Dry Lab",
+                        link: "/document/introduction/[1]Introduction/[1]What-is-dry-lab"
+                    },
                     {
-                        text: '介绍',
-                        items: [
-                            {
-                                text: "What is dry lab",
-                                link: "/document/introduction/What-is-dry-lab"
-                            }
-                        ]
+                        text: "Model",
+                        link: "/document/model/[1]Introduction/[1]What-is-model"
+                    },
+                    {
+                        text: "WIKI",
+                        link: "/document/wiki/[1]Introduction/[1]What-is-WIKI"
                     }
                 ]
             },
-            socialLinks: [
-                {
-                    icon: 'github',
-                    link: 'https://github.com/497363983/iGEM-ToolBox'
-                }
-            ],
-            editLink: {
-                pattern: "https://github.com/497363983/dry-lab/edit/main/docs/:path",
-                text: "Edit this page on GitHub"
+            {
+                text: "About",
+                link: "/about"
             }
+        ],
+        sidebar: {
+            "/document/introduction/": getSideBarItems("introduction"),
+            "/document/model/": getSideBarItems("model"),
+            "/document/wiki/": getSideBarItems("wiki")
         },
-        markdown: {
-            config: (md) => {
-                md.use(require('markdown-it-texmath'), {
-                    engine: require('katex'),
-                    delimiters: 'github',
-                })
+        socialLinks: [
+            {
+                icon: 'github',
+                link: 'https://github.com/497363983/dry-lab'
             }
+        ],
+        footer: {
+            message: `Released under the MIT License.`
         },
-        base: '/dry-lab/'
-    })
+    },
+    markdown: {
+        config: (md) => {
+            md.use(require('markdown-it-texmath'), {
+                engine: require('katex'),
+                delimiters: 'github',
+            })
+        }
+    },
+    base: '/dry-lab/',
+
+})
