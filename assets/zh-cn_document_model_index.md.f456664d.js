@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n}from"./app.66ecfdae.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"zh-cn/document/model/index.md","lastUpdated":1668489334000}'),a={name:"zh-cn/document/model/index.md"};function o(c,d,r,s,i,m){return n(),t("div")}const l=e(a,[["render",o]]);export{_ as __pageData,l as default};
