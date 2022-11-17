@@ -3,6 +3,7 @@ node_modules
 /dist
 /py/.env
 .jshintrc
+/docs/index.js
 
 # local env files
 .env.local
