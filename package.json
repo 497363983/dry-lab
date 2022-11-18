@@ -8,7 +8,9 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "update": "node ./docs/scripts/update.js",
-    "contributor:init": "all-contributors init"
+    "contributor:init": "all-contributors init",
+    "contributor:add": "all-contributors add",
+    "contributor:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
