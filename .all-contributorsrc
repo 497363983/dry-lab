@@ -1,0 +1,15 @@
+{
+  "projectName": "dry-lab",
+  "projectOwner": "497363983",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "jshint",
+  "contributors": [],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}

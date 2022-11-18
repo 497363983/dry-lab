@@ -7,7 +7,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "update": "node ./docs/scripts/update.js"
+    "update": "node ./docs/scripts/update.js",
+    "contributor:init": "all-contributors init"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/497363983/dry-lab#readme",
   "devDependencies": {
+    "all-contributors-cli": "^6.24.0",
     "fast-glob": "^3.2.12",
     "flexsearch": "^0.7.31",
     "fs-extra": "^10.1.0",
