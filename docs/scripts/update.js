@@ -55,13 +55,17 @@ async function listContributors() {
     } catch (e) {
         console.error(e)
     }
+}
 
+async function copyREADME() {
+    await fs.copy(join(DIR_ROOT, 'README.md'), join(DIR_DOCS, 'about.md'))
 }
 
 async function run() {
     listPages(join(DIR_DOCS, 'document'))
     listPages(join(DIR_DOCS, 'zh-cn/document'))
     listContributors()
+    copyREADME()
 }
 
 run()
