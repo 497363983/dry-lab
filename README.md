@@ -22,7 +22,7 @@
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/497363983"><img src="https://avatars.githubusercontent.com/u/73334890?v=4?s=100" width="100px;" alt="qww"/><br /><sub><b>qww</b></sub></a><br /><a href="https://github.com/497363983/dry-lab/commits?author=497363983" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/497363983"><img src="https://avatars.githubusercontent.com/u/73334890?v=4?s=100" width="100px;" alt="qww"/><br /><sub><b>qww</b></sub></a><br /><a href="https://github.com/497363983/dry-lab/commits?author=497363983" title="Code">💻</a> <a href="https://github.com/497363983/dry-lab/commits?author=497363983" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
