@@ -18,7 +18,7 @@ async function listPages(dir, ignore = []) {
         cwd: dir,
         ignore,
     })
-    const pages = files.map((i) => {
+    const pages = await Promise.all(files.map(async (i) => {
         const name = i.replace(/\.md$/, '')
         const pageName = name.split('/').pop().replace(/-/g, ' ')
         const section = name.split('/').length >= 3 ? name.split('/')[1] : 'root'
@@ -27,8 +27,11 @@ async function listPages(dir, ignore = []) {
         const index = pageName.match(/^\[(\d+)\]/)?.[1]
         const title = pageName.replace(/\[[0-9]+\]/g, '').trim()
         const path = join(dir, i)
-        const docPath = relative(DIR_DOCS, path)
+        const docPath = relative(DIR_DOCS, path).replace(/\\/g, '/')
         const collection = i.split('/')[0]
+        const meta = (await git.raw(['log', '--pretty=format:"%ad|%an"', path])).replace(/"/g, '').split('\n').pop().split('|')
+        const publishTime = meta[0]
+        const author = meta[1]
         return {
             name,
             path,
@@ -37,10 +40,12 @@ async function listPages(dir, ignore = []) {
             pageName,
             title,
             index,
-            section
+            section,
+            publishTime,
+            author
         }
-    })
-    await fs.writeJSON(join(DIR_DOCS, 'index.json'), pages, { spaces: 2 })
+    }))
+    await fs.writeJSON(join(dir, 'index.json'), pages, { spaces: 2 })
     return pages
 
 }
@@ -51,5 +56,6 @@ async function readMetaData() {
 }
 
 listPages(join(DIR_DOCS, 'document'))
+listPages(join(DIR_DOCS, 'zh-cn/document'))
 
 

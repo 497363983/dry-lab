@@ -1,6 +1,7 @@
 // import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { getSideBarItems } from "./config/sidebar";
+import enPages from "../document/index.json";
 export default withMermaid({
     title: "Dry Lab",
     description: "A knowledge base for dry lab in iGEM",
@@ -31,9 +32,9 @@ export default withMermaid({
             }
         ],
         sidebar: {
-            "/document/introduction/": getSideBarItems("introduction"),
-            "/document/model/": getSideBarItems("model"),
-            "/document/wiki/": getSideBarItems("wiki")
+            "/document/introduction/": getSideBarItems(enPages, "introduction"),
+            "/document/model/": getSideBarItems(enPages, "model"),
+            "/document/wiki/": getSideBarItems(enPages, "wiki")
         },
         socialLinks: [
             {
@@ -44,6 +45,10 @@ export default withMermaid({
         footer: {
             message: `Released under the MIT License.`
         },
+        editLink: {
+            text: 'Edit this page on GitHub',
+            pattern: 'https://github.com/497363983/dry-lab/edit/main/docs/:path'
+        }
     },
     markdown: {
         config: (md) => {
@@ -51,6 +56,11 @@ export default withMermaid({
                 engine: require('katex'),
                 delimiters: 'github',
             })
+            md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+                let htmlResult = slf.renderToken(tokens, idx, options, env, slf)
+                if (tokens[idx].tag === 'h1') htmlResult += `\n<ClientOnly><articleInformation :article="$frontmatter" /></ClientOnly>`
+                return htmlResult
+            }
         }
     },
     base: '/dry-lab/',

@@ -1,6 +1,10 @@
-import  DefaultTheme  from "vitepress/theme";
-
+import DefaultTheme from "vitepress/theme";
+import customLayout from "./customLayout.vue";
 
 export default {
-    ...DefaultTheme
+    ...DefaultTheme,
+    Layout: customLayout,
+    enhanceApp(ctx) {
+        DefaultTheme.enhanceApp(ctx)
+    }
 }

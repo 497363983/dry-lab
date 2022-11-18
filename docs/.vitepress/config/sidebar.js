@@ -1,7 +1,4 @@
-import { resolve } from 'path';
-import pages from '../../index.json';
-
-export function getSideBarItems(collection, path = '') {
+export function getSideBarItems(pages, collection, path = '/') {
     const items = pages.filter((i) => i.collection === collection);
     const sidebar = [];
     items.forEach((i) => {
