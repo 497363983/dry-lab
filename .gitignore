@@ -4,6 +4,8 @@ node_modules
 /py/.env
 .jshintrc
 /docs/index.json
+/docs/document/index.json
+/docs/zh-cn/document/index.json
 
 # local env files
 .env.local
