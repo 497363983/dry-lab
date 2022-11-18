@@ -1,5 +1,3 @@
-import { contributors } from '../../../.all-contributorsrc';
-
 const ID = '/virtual-contributors'
 
 export function Contributors(data) {
