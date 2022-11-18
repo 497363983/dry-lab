@@ -46,16 +46,23 @@ async function listPages(dir, ignore = []) {
         }
     }))
     await fs.writeJSON(join(dir, 'index.json'), pages, { spaces: 2 })
-    return pages
+}
+
+async function listContributors() {
+    try {
+        const contributiors = (await fs.readJSON(join(DIR_ROOT, '.all-contributorsrc'))).contributors
+        await fs.writeJSON(join(DIR_ROOT, 'contributors.json'), contributiors, { spaces: 2 })
+    } catch (e) {
+        console.error(e)
+    }
 
 }
 
-async function readMetaData() {
-    // Read the metadata file
-
+async function run() {
+    listPages(join(DIR_DOCS, 'document'))
+    listPages(join(DIR_DOCS, 'zh-cn/document'))
+    listContributors()
 }
 
-listPages(join(DIR_DOCS, 'document'))
-listPages(join(DIR_DOCS, 'zh-cn/document'))
-
+run()
 

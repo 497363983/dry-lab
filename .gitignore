@@ -6,6 +6,7 @@ node_modules
 /docs/index.json
 /docs/document/index.json
 /docs/zh-cn/document/index.json
+contributors.json
 
 # local env files
 .env.local
