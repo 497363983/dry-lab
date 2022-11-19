@@ -23,6 +23,10 @@ export default withMermaid({
                     {
                         text: "WIKI",
                         link: "/document/wiki/[1]Introduction/[1]What-is-WIKI"
+                    },
+                    {
+                        text: "Hardware",
+                        link: "/document/hardware/[1]Introduction/[1]What-is-hardware"
                     }
                 ]
             },
