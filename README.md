@@ -19,6 +19,8 @@
 - [ ] Multilanguage support(waiting to the [#1339](https://github.com/vuejs/vitepress/pull/1339#issue-1372980708) be merged)
 - [ ] Complete Document Content
 - [ ] Automatically synchronize to gitee
+- [ ] Logo
+- [ ] Comment feature
 
 
 ## Contributors
