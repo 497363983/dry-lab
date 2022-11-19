@@ -14,6 +14,13 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+## TODO
+
+- [ ] Multilanguage support(waiting to the [#1339](https://github.com/vuejs/vitepress/pull/1339#issue-1372980708) be merged)
+- [ ] Complete Document Content
+- [ ] Automatically synchronize to gitee
+
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

@@ -21,7 +21,9 @@ const author = computed(() => {
 });
 
 const date = computed(() => {
-  return new Date(currentPage.value?.publishTime).toLocaleString();
+  return currentPage.value?.publishTime
+    ? new Date(currentPage.value?.publishTime).toLocaleString()
+    : null;
 });
 
 const link = computed(() =>

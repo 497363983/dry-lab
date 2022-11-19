@@ -5,11 +5,10 @@ import { useData } from "vitepress";
 
 const { page } = useData();
 const contributors = computed(() => _contributors[page.value.relativePath]);
-console.log(_contributors, useData());
 </script>
 
 <template>
-  <div v-if="contributors.length !== 0">
+  <div v-if="contributors?.length">
     <h2 class="doc-head">Contributors</h2>
     <div class="flex gap-4">
       <div
