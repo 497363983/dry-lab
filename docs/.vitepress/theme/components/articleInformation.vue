@@ -44,7 +44,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="flex gap-4" style="magin-top: 1.5rem">
+  <div class="flex gap-4" style="margin-top: 1.5rem">
     <div v-if="author" class="flex gap-2" style="opacity: 50%" title="author">
       <octicon-person-16 />
       <a class="doc-link" v-if="link" :href="link" target="_blank">{{ author }}</a>
