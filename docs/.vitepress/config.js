@@ -51,7 +51,8 @@ export default withMermaid({
         sidebar: {
             "/document/introduction/": getSideBarItems(enPages, "introduction"),
             "/document/model/": getSideBarItems(enPages, "model"),
-            "/document/wiki/": getSideBarItems(enPages, "wiki")
+            "/document/wiki/": getSideBarItems(enPages, "wiki"),
+            "/document/hardware/": getSideBarItems(enPages, "hardware")
         },
         socialLinks: [
             {
