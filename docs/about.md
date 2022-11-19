@@ -14,4 +14,4 @@ editLink: false
   </a>
 </div>
 
-This project is used to store the experience and basic knowledge about dry lab and synthetic biology from ZJUT-China in iGEM.
+This project is used to store the experience and basic knowledge about dry lab in iGEM and synthetic biology.
