@@ -7,6 +7,8 @@ node_modules
 /docs/document/index.json
 /docs/zh-cn/document/index.json
 contributors.json
+ssh
+*.pub
 
 # local env files
 .env.local
