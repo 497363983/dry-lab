@@ -1,7 +1,7 @@
 {
   "name": "dry-lab",
   "version": "1.0.0",
-  "description": "A document for dry lab in iGEM",
+  "description": "A knowledge base for dry lab in iGEM",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",

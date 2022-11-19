@@ -3,7 +3,7 @@ layout: home
 
 hero:
     name: Dry Lab
-    text: A document for dry lab in iGEM
+    text: A knowledge base for dry lab in iGEM
     # tagline: Lorem
     # image:
     #     src: 
@@ -15,4 +15,14 @@ hero:
         - theme: alt
           text: View on GitHub
           link: https://github.com/497363983/dry-lab
+features:
+    - icon: 💻
+      title: WIKI
+      details: Introduce something about wiki
+    - icon: 🔨
+      title: Hardware
+      details: Introduce something about hardware
+    - icon: 📈
+      title: Model
+      details: Introduce something about model
 ---

@@ -31,6 +31,19 @@ export default withMermaid({
                 ]
             },
             {
+                text: "Contributing",
+                items: [
+                    {
+                        text: "Contribute to documents",
+                        link: "/contributing/docs"
+                    },
+                    {
+                        text: "Contribute to code",
+                        link: "/contributing/code"
+                    }
+                ]
+            },
+            {
                 text: "About",
                 link: "/about"
             }
