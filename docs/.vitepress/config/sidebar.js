@@ -9,7 +9,7 @@ export function getSideBarItems(pages, collection, path = '/') {
                 index: i.index,
             });
         } else {
-            const section = sidebar.find((j) => j.text === i.section);
+            const section = sidebar.find((j) => j.text === i.section.replace(/\[[0-9]+\]/g, '').trim());
             if (section) {
                 section.items.push({
                     text: i.title,

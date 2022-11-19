@@ -32,16 +32,7 @@ export default withMermaid({
             },
             {
                 text: "Contributing",
-                items: [
-                    {
-                        text: "Contribute to documents",
-                        link: "/contributing/docs"
-                    },
-                    {
-                        text: "Contribute to code",
-                        link: "/contributing/code"
-                    }
-                ]
+                link: "/document/contributing/[1]Introduction/[1]File-structure"
             },
             {
                 text: "About",
@@ -52,7 +43,8 @@ export default withMermaid({
             "/document/introduction/": getSideBarItems(enPages, "introduction"),
             "/document/model/": getSideBarItems(enPages, "model"),
             "/document/wiki/": getSideBarItems(enPages, "wiki"),
-            "/document/hardware/": getSideBarItems(enPages, "hardware")
+            "/document/hardware/": getSideBarItems(enPages, "hardware"),
+            "/document/contributing/": getSideBarItems(enPages, "contributing")
         },
         socialLinks: [
             {
