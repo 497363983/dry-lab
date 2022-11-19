@@ -2,6 +2,7 @@
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { getSideBarItems } from "./config/sidebar";
 import enPages from "../document/index.json";
+import { getNavItem, getNavItems } from "./config/nav";
 export default withMermaid({
     title: "Dry Lab",
     description: "A knowledge base for dry lab in iGEM",
@@ -11,29 +12,9 @@ export default withMermaid({
         nav: [
             {
                 text: "Document",
-                items: [
-                    {
-                        text: "About Dry Lab",
-                        link: "/document/introduction/[1]Introduction/[1]What-is-dry-lab"
-                    },
-                    {
-                        text: "Model",
-                        link: "/document/model/[1]Introduction/[1]What-is-model"
-                    },
-                    {
-                        text: "WIKI",
-                        link: "/document/wiki/[1]Introduction/[1]What-is-WIKI"
-                    },
-                    {
-                        text: "Hardware",
-                        link: "/document/hardware/[1]Introduction/[1]What-is-hardware"
-                    }
-                ]
+                items: getNavItems(enPages)
             },
-            {
-                text: "Contributing",
-                link: "/document/contributing/[1]Introduction/[1]File-structure"
-            },
+            getNavItem(enPages, "contributing", "Contributing"),
             {
                 text: "About",
                 link: "/about"

@@ -19,6 +19,7 @@ export function getSideBarItems(pages, collection, path = '/') {
             } else {
                 sidebar.push({
                     text: i.section.replace(/\[[0-9]+\]/g, '').trim(),
+                    index: i.section.match(/^\[(\d+)\]/)?.[1],
                     collapsible: true,
                     items: [
                         {
