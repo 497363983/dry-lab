@@ -3,6 +3,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 import { getSideBarItems } from "./config/sidebar";
 import enPages from "../document/index.json";
 import { getNavItem, getNavItems } from "./config/nav";
+import { customElement } from "./config/customElement";
 export default withMermaid({
     title: "Dry Lab",
     description: "A knowledge base for dry lab in iGEM",
@@ -42,18 +43,27 @@ export default withMermaid({
         }
     },
     markdown: {
+        toc: {
+            level: [2]
+        },
         config: (md) => {
+            // md.use(require('markdown-it-mathjax3'))
             md.use(require('markdown-it-texmath'), {
                 engine: require('katex'),
-                delimiters: 'github',
-            })
-            
+            });
             md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
                 let htmlResult = slf.renderToken(tokens, idx, options, env, slf)
                 if (tokens[idx].tag === 'h1') htmlResult += `\n<ClientOnly><articleInformation :article="$frontmatter" /></ClientOnly>`
                 return htmlResult
             }
-        }
+        },
     },
     base: '/dry-lab/',
+    vue: {
+        template: {
+            compilerOptions: {
+                isCustomElement: (tag) => customElement.includes(tag)
+            }
+        }
+    }
 })
