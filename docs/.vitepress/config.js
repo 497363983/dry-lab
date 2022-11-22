@@ -47,6 +47,7 @@ export default withMermaid({
                 engine: require('katex'),
                 delimiters: 'github',
             })
+            
             md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
                 let htmlResult = slf.renderToken(tokens, idx, options, env, slf)
                 if (tokens[idx].tag === 'h1') htmlResult += `\n<ClientOnly><articleInformation :article="$frontmatter" /></ClientOnly>`
@@ -55,5 +56,4 @@ export default withMermaid({
         }
     },
     base: '/dry-lab/',
-
 })

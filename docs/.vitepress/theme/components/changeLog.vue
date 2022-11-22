@@ -38,7 +38,7 @@ const commits = computed(() => {
           :href="`https://github.com/497363983/dry-lab/commit/${commit.hash}`"
           target="_blank"
         >
-          <code>{{ commit.hash.slice(0, 5) }}</code>
+          <code class="doc-code">{{ commit.hash.slice(0, 5) }}</code>
         </a>
         <span style="font-size: 0.875rem; line-height: 1.25rem">
           -
