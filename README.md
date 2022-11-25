@@ -1,4 +1,4 @@
-# A document for dry lab in iGEM
+# A knowledge base for dry lab in iGEM
 
 
 <div>
