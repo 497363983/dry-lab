@@ -18,6 +18,9 @@
 
 - [ ] Multilanguage support(waiting to the [#1339](https://github.com/vuejs/vitepress/pull/1339#issue-1372980708) be merged)
 - [ ] Complete Document Content
+  - [ ] WIKI[@qww](https://github.com/497363983)
+  - [ ] Model[@welcomesha](https://github.com/welcomesha)
+  - [ ] Hardware[@Fanyi](https://github.com/Funny2345)
 - [ ] Automatically synchronize to gitee
 - [ ] Logo
 - [ ] Comment feature
