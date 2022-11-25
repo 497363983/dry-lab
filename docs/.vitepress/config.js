@@ -1,4 +1,4 @@
-// import { defineConfig } from "vitepress";
+import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { getSideBarItems } from "./config/sidebar";
 import enPages from "../document/index.json";
@@ -40,6 +40,19 @@ export default withMermaid({
         editLink: {
             text: 'Edit this page on GitHub',
             pattern: 'https://github.com/497363983/dry-lab/edit/main/docs/:path'
+        },
+        localeLinks: {
+            text: "Languages",
+            items: [
+                {
+                    text: "简体中文",
+                    link: "/zh-cn/"
+                },
+                {
+                    text: "English",
+                    link: "/"
+                }
+            ]
         }
     },
     markdown: {
