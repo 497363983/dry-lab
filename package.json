@@ -52,5 +52,6 @@
     "vitepress-plugin-mermaid": "^2.0.8",
     "vitepress-plugin-search": "^1.0.4-alpha.15",
     "vue": "^3.2.45"
-  }
+  },
+  "type": "module"
 }

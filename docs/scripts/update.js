@@ -1,12 +1,12 @@
-// import { join, relative, resolve } from 'path'
-// import fs from 'fs-extra'
-// import fg from 'fast-glob'
-// import Git from 'simple-git'
+import { join, relative, resolve } from 'path'
+import fs from 'fs-extra'
+import fg from 'fast-glob'
+import Git from 'simple-git'
 
-const { join, relative, resolve } = require('path')
-const fs = require('fs-extra')
-const fg = require('fast-glob')
-const Git = require('simple-git')
+// const { join, relative, resolve } = require('path')
+// const fs = require('fs-extra')
+// const fg = require('fast-glob')
+// const Git = require('simple-git')
 
 const DIR_ROOT = process.cwd();
 const DIR_DOCS = join(DIR_ROOT, 'docs')

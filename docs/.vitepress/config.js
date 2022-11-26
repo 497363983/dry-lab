@@ -4,6 +4,8 @@ import { getSideBarItems } from "./config/sidebar";
 import enPages from "../document/index.json";
 import { getNavItem, getNavItems } from "./config/nav";
 import { customElement } from "./config/customElement";
+import texmath from "markdown-it-texmath";
+import katex from "katex";
 export default withMermaid({
     title: "Dry Lab",
     description: "A knowledge base for dry lab in iGEM",
@@ -61,8 +63,8 @@ export default withMermaid({
         },
         config: (md) => {
             // md.use(require('markdown-it-mathjax3'))
-            md.use(require('markdown-it-texmath'), {
-                engine: require('katex'),
+            md.use(texmath, {
+                engine: katex,
             });
             md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
                 let htmlResult = slf.renderToken(tokens, idx, options, env, slf)

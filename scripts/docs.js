@@ -19,7 +19,7 @@ const DIR_DOCS_ZH = path.join(DIR_DOCS, 'zh-cn/document');
 const DOCUMENTS = {
     en: DIR_DOCS_EN,
     zh: DIR_DOCS_ZH,
-}
+};
 
 const questions = [
     {
