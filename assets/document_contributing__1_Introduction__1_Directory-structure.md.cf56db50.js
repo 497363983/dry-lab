@@ -1,0 +1,21 @@
+import{_ as a}from"./chunks/articleInformation.d5bff0fb.js";import{_ as c,c as l,a as s,w as r,b as n,d as p,e as i,r as u,o as d}from"./app.e8206917.js";const v=JSON.parse('{"title":"Directory structure","description":"","frontmatter":{"author":"qww","link":"https://github.com/497363983"},"headers":[],"relativePath":"document/contributing/[1]Introduction/[1]Directory-structure.md","lastUpdated":1669403878000}'),y={name:"document/contributing/[1]Introduction/[1]Directory-structure.md"},C=n("h1",{id:"directory-structure",tabindex:"-1"},[p("Directory structure "),n("a",{class:"header-anchor",href:"#directory-structure","aria-hidden":"true"},"#")],-1),A=i(`<p>The directory structure is shown in the following.</p><p>To contribute to the documents, you just need to edit the markdown files in the folder <code>docs/document</code> for english version or the folder <code>zh-cn/document</code> for chinese version. About how to edit the documents, please refer to <a href="/dry-lab/document/contributing/[1]Introduction/[2]How-to-edit-documents">How to edit documents</a>.</p><p>To contribute to the source code, you can refer to the document of <a href="https://vitepress.vuejs.org/guide/what-is-vitepress" target="_blank" rel="noreferrer">vitepress</a>.</p><div class="language-shell"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki"><code><span class="line"><span style="color:#A6ACCD;">\u251C\u2500.github</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2514\u2500workflows</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u251C\u2500docs</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u251C\u2500.vitepress</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500config </span><span style="color:#676E95;">#vitepress config</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500plugins </span><span style="color:#676E95;">#custom vitepress plugin</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u2514\u2500theme </span><span style="color:#676E95;">#website structure</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502      \u251C\u2500components </span><span style="color:#676E95;">#vue components</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502      \u2514\u2500style </span><span style="color:#676E95;">#scss files</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u251C\u2500document</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500contributing </span><span style="color:#676E95;">#contributing documents</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500hardware </span><span style="color:#676E95;">#hardware documents</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500introduction </span><span style="color:#676E95;">#introduction</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u251C\u2500model </span><span style="color:#676E95;">#model documents</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2502  \u2514\u2500wiki </span><span style="color:#676E95;">#wiki documents</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u251C\u2500public </span><span style="color:#676E95;">#static resources, for example jpg,png,svg files</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u251C\u2500scripts </span><span style="color:#676E95;">#scripts about document manipulation</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502  \u2514\u2500zh-cn </span><span style="color:#676E95;">#chinese version Document</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2502      \u2514\u2500...</span></span>
+<span class="line"><span style="color:#A6ACCD;">\u2514\u2500scripts</span></span>
+<span class="line"></span></code></pre></div>`,4);function m(e,h,_,f,D,g){const t=a,o=u("ClientOnly");return d(),l("div",null,[C,s(o,null,{default:r(()=>[s(t,{article:e.$frontmatter},null,8,["article"])]),_:1}),A])}const E=c(y,[["render",m]]);export{v as __pageData,E as default};
