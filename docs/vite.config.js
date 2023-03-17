@@ -3,8 +3,8 @@ import { getPageContributors, getChangeLog } from '../scripts/changelog'
 import { SearchPlugin } from 'vitepress-plugin-search'
 import { Contributors } from './.vitepress/plugins/contributors'
 import { ChangeLog } from './.vitepress/plugins/changeLog'
-import enPages from './document/index.json'
-import zhPages from './zh-cn/document/index.json'
+import enPages from './document/en/index.json'
+import zhPages from './document/zh-cn/index.json'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
@@ -34,6 +34,11 @@ export default defineConfig(async () => {
                 defaultStyle: 'display:inline-block;',
             }),
         ],
+        resolve: {
+            alias: {
+                'mermaid': 'mermaid/dist/mermaid.esm.mjs'
+            }
+        }
     }
 
 })

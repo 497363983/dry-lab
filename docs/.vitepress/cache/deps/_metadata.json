@@ -1,0 +1,19 @@
+{
+  "hash": "cd033bc3",
+  "browserHash": "f6250b78",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "5a8f86bb",
+      "needsInterop": false
+    },
+    "mermaid": {
+      "src": "../../../../node_modules/mermaid/dist/mermaid.esm.mjs",
+      "file": "mermaid.js",
+      "fileHash": "f529a543",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

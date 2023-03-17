@@ -30,9 +30,9 @@ const link = computed(() =>
 
 onMounted(async () => {
   if (localePath.value === "/dry-lab/") {
-    pages.value = (await import("../../../document/index.json")).default;
+    pages.value = (await import("../../../document/en/index.json")).default;
   } else if (localePath.value === "/dry-lab/zh-cn/") {
-    pages.value = (await import("../../../zh-cn/document/index.json")).default;
+    pages.value = (await import("../../../document/zh-cn/index.json")).default;
   }
 });
 </script>

@@ -3,7 +3,7 @@
  * @type {import('vitepress').UserConfig}
  */
 export const cnConfig = {
-    description: "ZJUT-iGEM dry lab知识库",
+    description: "Dry lab知识库",
     themeConfig: {
         nav: [
             {

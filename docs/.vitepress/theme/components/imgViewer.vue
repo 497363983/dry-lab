@@ -1,7 +1,5 @@
 <script setup>
-import { useData } from "vitepress";
-const { localePath } = useData();
-console.log(localePath);
+import { withBase } from "vitepress";
 defineProps({
   src: {
     type: String,
@@ -31,7 +29,7 @@ defineProps({
 </script>
 <template>
   <div class="img-viewer">
-    <img :style="{ width }" :src="localePath.slice(0, -1) + src" :alt="alt" />
+    <img :style="{ width }" :src="withBase(src)" :alt="alt" />
     <span v-if="index" v-html="`${prefix} ${index}. ${caption}`"></span>
   </div>
 </template>

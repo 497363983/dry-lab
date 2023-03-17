@@ -1,16 +1,16 @@
-import { defineConfig } from "vitepress";
+// import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { getSideBarItems } from "./config/sidebar";
-import enPages from "../document/index.json";
+import enPages from "../document/en/index.json";
 import { getNavItem, getNavItems } from "./config/nav";
 import { customElement } from "./config/customElement";
 import texmath from "markdown-it-texmath";
 import katex from "katex";
 export default withMermaid({
-    title: "Dry Lab",
-    description: "A knowledge base for dry lab in iGEM",
+    // title: "Dry Lab",
+    // description: "A knowledge base for dry lab in iGEM",
     lastUpdated: true,
-    cleanUrls: 'without-subfolders',
+    // cleanUrls: 'without-subfolders',
     themeConfig: {
         nav: [
             {
@@ -20,7 +20,7 @@ export default withMermaid({
             getNavItem(enPages, "contributing", "Contributing"),
             {
                 text: "About",
-                link: "/about"
+                link: "/document/en/about"
             }
         ],
         sidebar: {
@@ -43,18 +43,31 @@ export default withMermaid({
             text: 'Edit this page on GitHub',
             pattern: 'https://github.com/497363983/dry-lab/edit/main/docs/:path'
         },
-        localeLinks: {
-            text: "Languages",
-            items: [
-                {
-                    text: "简体中文",
-                    link: "/zh-cn/"
-                },
-                {
-                    text: "English",
-                    link: "/"
-                }
-            ]
+        // localeLinks: {
+        //     text: "Languages",
+        //     items: [
+        //         {
+        //             text: "简体中文",
+        //             link: "/zh-cn/"
+        //         },
+        //         {
+        //             text: "English",
+        //             link: "/"
+        //         }
+        //     ]
+        // }
+
+    },
+    locales: {
+        en: {
+            lang: "en",
+            label: "English",
+            link: "/en/",
+        },
+        cn: {
+            lang: "zh-CN",
+            label: "简体中文",
+            link: "/zh-cn/",
         }
     },
     markdown: {
@@ -68,7 +81,7 @@ export default withMermaid({
             });
             md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
                 let htmlResult = slf.renderToken(tokens, idx, options, env, slf)
-                if (tokens[idx].tag === 'h1') htmlResult += `\n<ClientOnly><articleInformation :article="$frontmatter" /></ClientOnly>`
+                if (tokens[idx].tag === 'h1') htmlResult += `\n<ClientOnly><articleInformation/></ClientOnly>`
                 return htmlResult
             }
         },

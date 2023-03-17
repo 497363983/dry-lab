@@ -62,7 +62,7 @@ async function listContributors() {
 // }
 
 async function run() {
-    listPages(join(DIR_DOCS, 'document'))
+    listPages(join(DIR_DOCS, 'en/document'))
     listPages(join(DIR_DOCS, 'zh-cn/document'))
     listContributors()
 }

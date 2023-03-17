@@ -1,0 +1,36 @@
+[
+  {
+    "name": "introduction/index",
+    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\introduction\\index.md",
+    "collection": "introduction",
+    "docPath": "zh-cn/document/introduction/index.md",
+    "pageName": "index",
+    "title": "index",
+    "section": "root",
+    "publishTime": "Tue Nov 15 13:15:34 2022 +0800",
+    "author": "sky1"
+  },
+  {
+    "name": "wiki/index",
+    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\wiki\\index.md",
+    "collection": "wiki",
+    "docPath": "zh-cn/document/wiki/index.md",
+    "pageName": "index",
+    "title": "index",
+    "section": "root",
+    "publishTime": "Tue Nov 15 13:15:34 2022 +0800",
+    "author": "sky1"
+  },
+  {
+    "name": "model/[1]Introduction/[1]What-is-model",
+    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\model\\[1]Introduction\\[1]What-is-model.md",
+    "collection": "model",
+    "docPath": "zh-cn/document/model/[1]Introduction/[1]What-is-model.md",
+    "pageName": "[1]What is model",
+    "title": "What is model",
+    "index": "1",
+    "section": "[1]Introduction",
+    "publishTime": "Sat Nov 26 03:19:46 2022 +0800",
+    "author": "qww"
+  }
+]
