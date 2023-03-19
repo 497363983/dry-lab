@@ -3,14 +3,9 @@ import fs from 'fs-extra'
 import fg from 'fast-glob'
 import Git from 'simple-git'
 
-// const { join, relative, resolve } = require('path')
-// const fs = require('fs-extra')
-// const fg = require('fast-glob')
-// const Git = require('simple-git')
-
 const DIR_ROOT = process.cwd();
 const DIR_DOCS = join(DIR_ROOT, 'docs')
-
+console.log(DIR_ROOT)
 const git = Git(DIR_ROOT)
 
 async function listPages(dir, ignore = []) {
@@ -62,8 +57,8 @@ async function listContributors() {
 // }
 
 async function run() {
-    listPages(join(DIR_DOCS, 'en/document'))
-    listPages(join(DIR_DOCS, 'zh-cn/document'))
+    listPages(join(DIR_DOCS, 'document/en'))
+    listPages(join(DIR_DOCS, 'document/zh-cn'))
     listContributors()
 }
 

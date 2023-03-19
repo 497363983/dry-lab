@@ -1,36 +1,47 @@
 [
   {
-    "name": "introduction/index",
-    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\introduction\\index.md",
-    "collection": "introduction",
-    "docPath": "zh-cn/document/introduction/index.md",
+    "name": "index",
+    "path": "E:\\develop\\dry-lab\\docs\\document\\zh-cn\\index.md",
+    "collection": "index.md",
+    "docPath": "document/zh-cn/index.md",
     "pageName": "index",
     "title": "index",
     "section": "root",
-    "publishTime": "Tue Nov 15 13:15:34 2022 +0800",
-    "author": "sky1"
+    "publishTime": "Fri Mar 17 10:44:07 2023 +0800",
+    "author": "qww"
   },
   {
-    "name": "wiki/index",
-    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\wiki\\index.md",
-    "collection": "wiki",
-    "docPath": "zh-cn/document/wiki/index.md",
+    "name": "document/introduction/index",
+    "path": "E:\\develop\\dry-lab\\docs\\document\\zh-cn\\document\\introduction\\index.md",
+    "collection": "document",
+    "docPath": "document/zh-cn/document/introduction/index.md",
     "pageName": "index",
     "title": "index",
-    "section": "root",
-    "publishTime": "Tue Nov 15 13:15:34 2022 +0800",
-    "author": "sky1"
+    "section": "introduction",
+    "publishTime": "Fri Mar 17 10:44:07 2023 +0800",
+    "author": "qww"
   },
   {
-    "name": "model/[1]Introduction/[1]What-is-model",
-    "path": "E:\\develop\\dry-lab\\docs\\zh-cn\\document\\model\\[1]Introduction\\[1]What-is-model.md",
-    "collection": "model",
-    "docPath": "zh-cn/document/model/[1]Introduction/[1]What-is-model.md",
+    "name": "document/wiki/index",
+    "path": "E:\\develop\\dry-lab\\docs\\document\\zh-cn\\document\\wiki\\index.md",
+    "collection": "document",
+    "docPath": "document/zh-cn/document/wiki/index.md",
+    "pageName": "index",
+    "title": "index",
+    "section": "wiki",
+    "publishTime": "Fri Mar 17 10:44:07 2023 +0800",
+    "author": "qww"
+  },
+  {
+    "name": "document/model/[1]Introduction/[1]What-is-model",
+    "path": "E:\\develop\\dry-lab\\docs\\document\\zh-cn\\document\\model\\[1]Introduction\\[1]What-is-model.md",
+    "collection": "document",
+    "docPath": "document/zh-cn/document/model/[1]Introduction/[1]What-is-model.md",
     "pageName": "[1]What is model",
     "title": "What is model",
     "index": "1",
-    "section": "[1]Introduction",
-    "publishTime": "Sat Nov 26 03:19:46 2022 +0800",
+    "section": "model",
+    "publishTime": "Fri Mar 17 10:44:07 2023 +0800",
     "author": "qww"
   }
 ]
